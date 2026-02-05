@@ -104,9 +104,11 @@ namespace BuildingStyleToolsCommon
 
             public override void Write(Utf8JsonWriter writer, BuildingStyleInfo value, JsonSerializerOptions options)
             {
+                writer.WriteStartObject();
                 writer.WriteString(NamePropertyNameUtf8, value.Name);
                 writer.WriteString(AuthorPropertyNameUtf8, value.Author);
                 writer.WriteString(DescriptionPropertyNameUtf8, value.Description);
+                writer.WriteEndObject();
             }
 
             private static string ReadStringValue(ref Utf8JsonReader reader)
