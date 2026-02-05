@@ -11,7 +11,7 @@ See [License.txt](License.txt) for more information.
 
 ## Prerequisites
 
-* Visual Studio 2022
+* Visual Studio 2026
 
 ## Building the plugin
 
